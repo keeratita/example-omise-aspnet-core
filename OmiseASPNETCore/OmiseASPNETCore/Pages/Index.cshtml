@@ -1,0 +1,12 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form class="checkout-form" name="checkoutForm" method="POST"  asp-page="Checkout">
+    <script type="text/javascript" src="https://cdn.omise.co/omise.js"
+            data-key="@Model.PublicKey"
+            data-amount="10025"
+            data-button-label="Click to see an example"></script>
+</form>
